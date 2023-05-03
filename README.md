@@ -24,3 +24,5 @@ use it for model-in-the-loop annotation.
 ```
 python -m prodigy textcat.sklearn sklearn-demo examples.jsonl --label insult --correct --prefer uncertain -F recipes/binary_textcat.py
 ```
+
+Feel free to take this recipe as a starting point to customise further!

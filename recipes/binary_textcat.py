@@ -37,6 +37,7 @@ from prodigy.components.sorters import prefer_uncertain, prefer_high_scores, pre
 def fit_from_prodigy(estimator, dataset, label):
     db = connect()
     examples = db.get_dataset_examples(dataset)
+    # The label is assumed to be True or False
     examples = [(ex, ex['answer'] == 'accept') 
                 for ex in examples 
                 if ex['answer'] in ['accept', 'reject']]
