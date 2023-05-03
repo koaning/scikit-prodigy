@@ -29,6 +29,14 @@ class ProdigyEstimator:
         texts, labels = zip(*examples)
         self.estimator.partial_fit(texts, labels)
         return self
+    
+    def predict(self, X):
+        """Maybe just mimic the underlying predict method? Nice to have around?"""
+        pass
+
+    def predict_proba(self, X):
+        """Maybe just mimic the underlying predict_proba method? Nice to have around?"""
+        pass
 
 from sklearn.linear_model import LogisticRegression
 from sklearn.pipeline import make_pipeline 
